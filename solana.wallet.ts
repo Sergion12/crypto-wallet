@@ -3,7 +3,7 @@ import { mnemonicToSeed } from "bip39"
 
 export async function createHDWalletSolana(): Promise<any> {
 
-  let mnemonic = "deny coach horror slim task pact pole half coil bottom shine supply";
+  let mnemonic = "engine body raise outer chase genre fringe useful flag version day shallow";
 
   const seed = await mnemonicToSeed(mnemonic);
   
@@ -23,7 +23,7 @@ export async function createHDWalletSolana(): Promise<any> {
     "m/501'/0'/0'",
   ];
 
-  let passwords = ["test1234", "test12345"];
+  let passwords = ["36_WoT2016_36"];
 
   console.log(mnemonic);
   console.dir({publicKeyNoDerivationPath: Keypair.fromSeed(seed.slice(0,32)).publicKey.toBase58()}, { colors: true, depth: 1})
